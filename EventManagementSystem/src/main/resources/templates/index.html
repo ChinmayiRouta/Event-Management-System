@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Management System</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Welcome to the Event Management System</h1>
+	<div id="registration-form">
+        <h2>Register</h2>
+	<h4>Please create an account if you first time visit then login</h4>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="registerUser()">Register</button>
+    </div>
+    
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="loginUser()">Login</button>
+    </div>
+    
+    <div id="event-form">
+    <h2>Create Event</h2>
+    <input type="text" id="event-title" placeholder="Event Title">
+    <textarea id="event-description" placeholder="Event Description"></textarea>
+    <input type="date" id="event-date">
+    <input type="time" id="event-time">
+    <input type="text" id="event-location" placeholder="Event Location">
+    <input type="text" id="event-ticket-info" placeholder="Ticket Info">
+    <button onclick="createEvent()">Create Event</button>
+	</div>
+	
+	<div id="dashboard">
+    <h2>My Events</h2>
+    <div id="events-list"></div>
+	</div>
+	
+	<div id="search">
+    <input type="text" id="search-keyword" placeholder="Search events...">
+    <button onclick="searchEvents()">Search</button>
+	</div>
+	
+	<div id="search-results"></div>
+    <div id="ticket-form">
+    <h2>Purchase Ticket</h2>
+    <input type="text" id="event-id" placeholder="Event ID">
+    <input type="text" id="user-id" placeholder="User ID">
+    <input type="text" id="ticket-type" placeholder="Ticket Type">
+    <input type="text" id="ticket-price" placeholder="Ticket Price">
+    <button onclick="purchaseTicket()">Purchase Ticket</button>
+	</div>
+    
+    <script src="js/script.js"></script> 
+
+</body>
+</html>
